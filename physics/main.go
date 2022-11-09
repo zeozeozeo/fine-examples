@@ -88,8 +88,8 @@ func initSpace() {
 func makeBounds(app *fine.App) {
 	lineStart1, lineEnd1 := fine.NewVec2(-400, 0), fine.NewVec2(-20, 200)
 	lineStart2, lineEnd2 := fine.NewVec2(400, 0), fine.NewVec2(20, 200)
-	app.Line(lineStart1, lineEnd1, color.RGBA{255, 255, 255, 255})
-	app.Line(lineStart2, lineEnd2, color.RGBA{255, 255, 255, 255})
+	app.Line(lineStart1, lineEnd1, color.RGBA{255, 255, 255, 255}, true)
+	app.Line(lineStart2, lineEnd2, color.RGBA{255, 255, 255, 255}, true)
 
 	space.AddShape(cp.NewSegment(space.StaticBody, cp.Vector{X: lineStart1.X, Y: -lineStart1.Y}, cp.Vector{X: lineEnd1.X, Y: -lineEnd1.Y}, 0))
 	space.AddShape(cp.NewSegment(space.StaticBody, cp.Vector{X: lineStart2.X, Y: -lineStart2.Y}, cp.Vector{X: lineEnd2.X, Y: -lineEnd2.Y}, 0))
