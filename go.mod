@@ -2,7 +2,7 @@ module github.com/zeozeozeo/fine-examples
 
 go 1.19
 
-require github.com/zeozeozeo/fine v0.0.0-20221109144945-aefef90846cb
+require github.com/zeozeozeo/fine v0.0.0-20221109145506-34c4b27962e8
 
 require (
 	github.com/faiface/beep v1.1.0 // indirect

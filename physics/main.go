@@ -109,11 +109,11 @@ func spawnBall(app *fine.App, position fine.Vec2, radius float64) {
 
 	// Create the entity
 	// TODO: Draw circles instead of rectangles
-	entity := app.Rect(
+	entity := app.Circle(
 		position,
-		radius*2,
-		radius*2,
+		radius,
 		color.RGBA{255, 255, 0, 255},
+		true,
 		true,
 	)
 	pBody := &PhysicsBody{
